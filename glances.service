@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=%h
-ExecStart=/home/%h/glances-venv/bin/python3 /home/%h/glances-venv/bin/glances -w -B 0.0.0.0
+ExecStart=%h/glances-venv/bin/python3 %h/glances-venv/bin/glances -C %h/.config/glances/glances.conf
 Restart=on-failure
 RestartSec=5s
 
