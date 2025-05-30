@@ -2,6 +2,9 @@
 
 Deze setup installeert Glances in een Python virtual environment en configureert een systemd service voor de web UI.
 
+install.sh pas gemaakt na integratie in bestaande Raspberry PI, dus nog niet helemaal getest :)
+config is wel getest
+
 ### Installatie
 
 1. Clone deze repo.
