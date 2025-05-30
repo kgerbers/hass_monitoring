@@ -23,3 +23,27 @@ Deze setup installeert Glances in een Python virtual environment en configureert
    ```
    http://<ip-van-apparaat>:61208
    ```
+
+# Glances integreren in Home Assistant
+
+Home Assistant ondersteunt een Glances integratie via de GUI:
+
+1. Ga in Home Assistant naar **Instellingen** > **Apparaten en Diensten** > **Integraties**.
+
+2. Klik op **Integratie toevoegen** en zoek naar **Glances**.
+
+3. Vul het IP-adres of hostname in van de machine waarop Glances draait, en poort `61208`.
+
+4. Sla op en de sensoren verschijnen automatisch in Home Assistant.
+
+## Tips
+
+- Glances draait standaard op poort 61208.
+- Zorg dat de firewall of router poort 61208 openzet voor interne toegang.
+- Voor extra veiligheid kan je een reverse proxy of VPN gebruiken.
+
+https://www.home-assistant.io/integrations/glances/ 
+
+---
+
+
