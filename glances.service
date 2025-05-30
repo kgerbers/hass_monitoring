@@ -1,0 +1,12 @@
+[Unit]
+Description=Glances Web UI (in Python venv)
+After=network.target
+
+[Service]
+User=%h
+ExecStart=/home/%h/glances-venv/bin/python3 /home/%h/glances-venv/bin/glances -w -B 0.0.0.0
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
